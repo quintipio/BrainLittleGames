@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="JeuxDeLogiqueWin10.Views.Games.Game.MotsMelangeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JeuxDeLogiqueWin10.Views.Games.Game"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:userControl="using:JeuxDeLogiqueWin10.Views.UserControl"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFEAEAEA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--header -->
+        <Grid Grid.Row="0" Background="#FFE9A750" Height="70">
+            <AppBarButton x:Name="LaunchTutoButton" HorizontalAlignment="Left" Icon="Help" Margin="0,0,0,0" VerticalAlignment="Top" Click="LaunchTutoButton_Click" FontFamily="Global User Interface"/>
+            <AppBarButton x:Name="CloseButton" HorizontalAlignment="Right" Icon="Clear" Margin="0,0,0,0" VerticalAlignment="Top" Click="CloseButton_Click" FontFamily="Global User Interface"/>
+        </Grid>
+
+        <!--Compte A rebours de démarrage -->
+        <Grid x:Name="CompteAReboursGrid" Grid.Row="1" Visibility="Collapsed">
+            <userControl:CompteARebours x:Name="Lanceur"/>
+        </Grid>
+
+        <!--Compte A rebours de démarrage -->
+        <Grid x:Name="ScoreGrid" Grid.Row="1" Visibility="Collapsed">
+            <userControl:AfficherScore x:Name="Score"/>
+        </Grid>
+
+        <!--Grid du jeu -->
+        <Grid Grid.Row="1" x:Name="GridJeu">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="MotMelangeText" Text="{x:Bind ViewModel.MotMelange,Mode=OneWay}"  Grid.Row="0" CharacterSpacing="5" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" TextWrapping="Wrap"/>
+
+            <Grid Grid.Row="1" x:Name="GridAide">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="HelpButton" IsEnabled="{x:Bind ViewModel.IsAideEnable,Mode=OneWay}" Grid.Column="0" Content="??" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Margin="0" Click="Help_Click"/>
+                <TextBlock x:Name="IndiceText" Text="{x:Bind ViewModel.Indice,Mode=OneWay}"  Grid.Column="1" CharacterSpacing="30" FontSize="18.667" TextWrapping="Wrap" TextAlignment="Center"/>
+                <Button x:Name="ChangeMotButton" Grid.Column="2" x:Uid="changeButton" Content="Changer" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Click="Change_Click"/>
+            </Grid>
+
+            <TextBox x:Name="MotEntreeTextBox"  Grid.Row="2" Text="{x:Bind ViewModel.MotEntree,Mode=TwoWay}" KeyUp="TextBox_KeyUp"/>
+            <Grid Grid.Row="3" x:Name="GridButton">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="ValidMotButton" Grid.Column="0" x:Uid="OkButton" Content="OK" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Margin="0" Click="Valid_Click"/>
+                <Button x:Name="AnnuleMotButton" Grid.Column="1" x:Uid="clearButton" Content="Effacer" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Click="Efface_Click"/>
+            </Grid>
+           </Grid>
+    </Grid>
+</Page>

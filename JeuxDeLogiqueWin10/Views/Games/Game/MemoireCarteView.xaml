@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="JeuxDeLogiqueWin10.Views.Games.Game.MemoireCarteView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:userControl="using:JeuxDeLogiqueWin10.Views.UserControl"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FFEAEAEA">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--header -->
+        <Grid Grid.Row="0" Background="#FFE9A750" Height="70">
+            <AppBarButton x:Name="LaunchTutoButton" HorizontalAlignment="Left" Icon="Help" Margin="0,0,0,0" VerticalAlignment="Top" Click="LaunchTutoButton_Click" FontFamily="Global User Interface"/>
+            <AppBarButton x:Name="CloseButton" HorizontalAlignment="Right" Icon="Clear" Margin="0,0,0,0" VerticalAlignment="Top" Click="CloseButton_Click" FontFamily="Global User Interface"/>
+        </Grid>
+
+        <!--Compte A rebours de démarrage -->
+        <Grid x:Name="CompteAReboursGrid" Grid.Row="1" Visibility="Collapsed">
+            <userControl:CompteARebours x:Name="Lanceur"/>
+        </Grid>
+
+        <!--Compte A rebours de démarrage -->
+        <Grid x:Name="ScoreGrid" Grid.Row="1" Visibility="Collapsed">
+            <userControl:AfficherScore x:Name="Score"/>
+        </Grid>
+
+        <!--Grid du jeu -->
+        <Grid Grid.Row="1" x:Name="GridJeu" />
+    </Grid>
+</Page>

@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="JeuxDeLogiqueWin10.Views.Games.TutorielView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid Background="#FFEAEAEA">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+
+            <!--header -->
+            <Grid Grid.Row="0" Background="#FFE9A750">
+                <TextBlock x:Name="HeaderTextBlock" Margin="0" FontSize="25" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="{StaticResource ImpactFontFamily}"/>
+                <AppBarButton x:Name="RetourButton" HorizontalAlignment="Left" Icon="Back" Margin="0" VerticalAlignment="Top" Click="RetourButton_Click"/>
+            </Grid>
+
+            <Grid Grid.Row="2" Background="#FFE9A750"/>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Image x:Name="ImageTuto" Margin="20"/>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <ScrollViewer Margin="0,0,110,0" VerticalScrollBarVisibility="Auto">
+                    <TextBlock x:Name="InstructionTextBlock" TextWrapping="Wrap" Foreground="Black" FontSize="18"/>
+                    </ScrollViewer>
+                        <Button x:Name="SuivantButton"  BorderBrush="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Width="110" Click="SuivantButton_Click" Margin="0,-10,0,-10">
+                        <AppBarButton Icon="Forward" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Click="SuivantButton_Click"/>
+                    </Button>
+                    <Button x:Name="JeuButton" Visibility="Collapsed" BorderBrush="{x:Null}" HorizontalAlignment="Right" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Width="110" Click="RetourButton_Click" Margin="0,-10,0,-10">
+                        <AppBarButton Icon="Accept" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center" Click="RetourButton_Click"/>
+                    </Button>
+                    
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Page>

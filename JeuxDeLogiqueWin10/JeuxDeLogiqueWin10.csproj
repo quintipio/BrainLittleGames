@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JeuxDeLogiqueWin10</RootNamespace>
+    <AssemblyName>JeuxDeLogiqueWin10</AssemblyName>
+    <DefaultLanguage>en</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square310x310Logo.scale-100.png" />
+    <Content Include="Assets\Square310x310Logo.scale-200.png" />
+    <Content Include="Assets\Square310x310Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square71x71Logo.scale-100.png" />
+    <Content Include="Assets\Square71x71Logo.scale-200.png" />
+    <Content Include="Assets\Square71x71Logo.scale-400.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Rsc\mots\listeben.txt" />
+    <Content Include="Rsc\mots\listebes.txt" />
+    <Content Include="Rsc\mots\listebfr.txt" />
+    <Content Include="Rsc\mots\listebpt.txt" />
+    <Content Include="Rsc\mots\listeen.txt" />
+    <Content Include="Rsc\mots\listees.txt" />
+    <Content Include="Rsc\mots\listefr.txt" />
+    <Content Include="Rsc\mots\listept.txt" />
+    <Content Include="Rsc\tuto\MotMel1.png" />
+    <Content Include="Rsc\tuto\MotMel2.png" />
+    <Content Include="Rsc\tuto\MotMel3.png" />
+    <Content Include="Rsc\tuto\MotMel4.png" />
+    <Content Include="Rsc\tuto\TrouveObjetCouleur1.png" />
+    <Content Include="Rsc\tuto\TrouveObjetCouleur2.png" />
+    <Content Include="Rsc\tuto\TrouveObjetCouleur3.png" />
+    <Content Include="Rsc\tuto\TrouveObjetCouleur4.png" />
+    <Content Include="Rsc\tuto\TrouveObjetCouleur5.png" />
+    <None Include="JeuxDeLogiqueWin10_StoreKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Rsc\img\box.png" />
+    <Content Include="Rsc\img\buttonIcone.png" />
+    <Content Include="Rsc\img\cat1.png" />
+    <Content Include="Rsc\img\cat2.png" />
+    <Content Include="Rsc\img\cat3.png" />
+    <Content Include="Rsc\img\cat4.png" />
+    <Content Include="Rsc\img\cat5.png" />
+    <Content Include="Rsc\img\cat6.png" />
+    <Content Include="Rsc\img\cat7.png" />
+    <Content Include="Rsc\img\catRes1.png" />
+    <Content Include="Rsc\img\catRes2.png" />
+    <Content Include="Rsc\img\catRes3.png" />
+    <Content Include="Rsc\img\catRes4.png" />
+    <Content Include="Rsc\img\catRes5.png" />
+    <Content Include="Rsc\img\catRes6.png" />
+    <Content Include="Rsc\img\catRes7.png" />
+    <Content Include="Rsc\img\catRes8.png" />
+    <Content Include="Rsc\img\catRes9.png" />
+    <Content Include="Rsc\img\icone.png" />
+    <Content Include="Rsc\img\right.png" />
+    <Content Include="Rsc\img\wrong.png" />
+    <Content Include="Rsc\tuto\CalculMental1.png" />
+    <Content Include="Rsc\tuto\CalculMental2.png" />
+    <Content Include="Rsc\tuto\CalculMental3.png" />
+    <Content Include="Rsc\tuto\CalculMental4.png" />
+    <Content Include="Rsc\tuto\CompteChiffre1.png" />
+    <Content Include="Rsc\tuto\CompteChiffre2.png" />
+    <Content Include="Rsc\tuto\CompteChiffre3.png" />
+    <Content Include="Rsc\tuto\ComptePersonne1.png" />
+    <Content Include="Rsc\tuto\ComptePersonne2.png" />
+    <Content Include="Rsc\tuto\ComptePersonne3.png" />
+    <Content Include="Rsc\tuto\ComptePersonne4.png" />
+    <Content Include="Rsc\tuto\Couleur1.png" />
+    <Content Include="Rsc\tuto\Couleur2.png" />
+    <Content Include="Rsc\tuto\DevineOp1.png" />
+    <Content Include="Rsc\tuto\DevineOp2.png" />
+    <Content Include="Rsc\tuto\JeuHoraire1.png" />
+    <Content Include="Rsc\tuto\JeuHoraire2.png" />
+    <Content Include="Rsc\tuto\JeuHoraire3.png" />
+    <Content Include="Rsc\tuto\JeuHoraire4.png" />
+    <Content Include="Rsc\tuto\JeuHoraire5.png" />
+    <Content Include="Rsc\tuto\MemChiffre1.png" />
+    <Content Include="Rsc\tuto\MemChiffre2.png" />
+    <Content Include="Rsc\tuto\MemChiffre3.png" />
+    <Content Include="Rsc\tuto\MemLettre1.png" />
+    <Content Include="Rsc\tuto\MemLettre2.png" />
+    <Content Include="Rsc\tuto\MemLettre3.png" />
+    <Content Include="Rsc\tuto\MemLettre4.png" />
+    <Content Include="Rsc\tuto\MemMot1.png" />
+    <Content Include="Rsc\tuto\MemMot2.png" />
+    <Content Include="Rsc\tuto\MemMot3.png" />
+    <Content Include="Rsc\tuto\MemMot4.png" />
+    <Content Include="Rsc\tuto\Switch.png" />
+    <Content Include="Rsc\tuto\Tricalcul1.png" />
+    <Content Include="Rsc\tuto\Tricalcul2.png" />
+    <Content Include="Rsc\tuto\Tricalcul3.png" />
+    <Content Include="Rsc\tuto\Tricalcul4.png" />
+    <None Include="project.json" />
+    <Content Include="Rsc\Font\Impact.ttf" />
+    <PRIResource Include="Strings\pt\Tutoriel.resw" />
+    <PRIResource Include="Strings\pt\Resources.resw" />
+    <PRIResource Include="Strings\pt\Errors.resw" />
+    <PRIResource Include="Strings\fr\Errors.resw" />
+    <PRIResource Include="Strings\fr\Tutoriel.resw" />
+    <PRIResource Include="Strings\fr\Resources.resw" />
+    <PRIResource Include="Strings\es\Tutoriel.resw" />
+    <PRIResource Include="Strings\es\Resources.resw" />
+    <PRIResource Include="Strings\es\Errors.resw" />
+    <PRIResource Include="Strings\en\Tutoriel.resw" />
+    <PRIResource Include="Strings\en\Resources.resw" />
+    <PRIResource Include="Strings\en\Errors.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\AbstractBusiness.cs" />
+    <Compile Include="Abstract\AbstractGame.cs" />
+    <Compile Include="Abstract\AbstractViewModel.cs" />
+    <Compile Include="Converter\BoolColorConverter.cs" />
+    <Compile Include="Converter\DoubleDoubleNullConverter.cs" />
+    <Compile Include="Interface\IViewGame.cs" />
+    <Compile Include="Interface\IView.cs" />
+    <Compile Include="ViewModel\Games\Game\MotsMelangeViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\TrouveObjetCouleurViewModel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\MotsMelangeTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\TrouveObjetCouleurTutoriel.cs" />
+    <Compile Include="Views\AcceuilView.xaml.cs">
+      <DependentUpon>AcceuilView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Business\ApplicationBusiness.cs" />
+    <Compile Include="Business\ScoreBusiness.cs" />
+    <Compile Include="Business\UtilisateurBusiness.cs" />
+    <Compile Include="Com\ComSqlite.cs" />
+    <Compile Include="Context\ContextAppli.cs" />
+    <Compile Include="Context\ContextStatic.cs" />
+    <Compile Include="Context\ContextUtilisateur.cs" />
+    <Compile Include="Enum\DifficulteEnum.cs" />
+    <Compile Include="Enum\ModeOuvertureJeuEnum.cs" />
+    <Compile Include="Enum\ModeOuvertureStatsEnum.cs" />
+    <Compile Include="Enum\MouvementEnum.cs" />
+    <Compile Include="Enum\OperationEnum.cs" />
+    <Compile Include="Enum\TypeQuestionEnum.cs" />
+    <Compile Include="Interface\IAsyncInitialization.cs" />
+    <Compile Include="Interface\ITutoriel.cs" />
+    <Compile Include="Views\Games\DifficulteView.xaml.cs">
+      <DependentUpon>DifficulteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\CalculMentalGameView.xaml.cs">
+      <DependentUpon>CalculMentalGameView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\CompteChiffreView.xaml.cs">
+      <DependentUpon>CompteChiffreView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\ComptePersonneView.xaml.cs">
+      <DependentUpon>ComptePersonneView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\DevineOperateurView.xaml.cs">
+      <DependentUpon>DevineOperateurView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\JeuCouleursView.xaml.cs">
+      <DependentUpon>JeuCouleursView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\JeuHoraireView.xaml.cs">
+      <DependentUpon>JeuHoraireView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\MemoireCarteView.xaml.cs">
+      <DependentUpon>MemoireCarteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\MemoireChiffreView.xaml.cs">
+      <DependentUpon>MemoireChiffreView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\MemoireMotsView.xaml.cs">
+      <DependentUpon>MemoireMotsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\MotsMelangeView.xaml.cs">
+      <DependentUpon>MotsMelangeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\PyramideChiffreView.xaml.cs">
+      <DependentUpon>PyramideChiffreView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\Game\TrouveObjetCouleurView.xaml.cs">
+      <DependentUpon>TrouveObjetCouleurView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Games\TutorielView.xaml.cs">
+      <DependentUpon>TutorielView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuView.xaml.cs">
+      <DependentUpon>MenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Appli.cs" />
+    <Compile Include="Model\Categorie.cs" />
+    <Compile Include="Model\Chiffre.cs" />
+    <Compile Include="Model\Element.cs" />
+    <Compile Include="Model\Exercice.cs" />
+    <Compile Include="Model\Resultats.cs" />
+    <Compile Include="Model\Score.cs" />
+    <Compile Include="Model\TutorielPasse.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings\ListeLangues.cs" />
+    <Compile Include="Utils\DateUtils.cs" />
+    <Compile Include="Utils\MessageBox.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="ViewModel\AcceuilViewModel.cs" />
+    <Compile Include="ViewModel\ConsultStatViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\CalculMentalViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\CompteChiffreViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\ComptePersonneViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\DevineOperateurViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\JeuCouleurViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\JeuHoraireViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\MemoireCarteViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\MemoireChiffreViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\MemoireMotsViewModel.cs" />
+    <Compile Include="ViewModel\Games\Game\PyramideChiffreViewModel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\CalculMentalTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\CompteChiffreTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\ComptePersonneTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\CouleursTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\DevineOperateurTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\JeuHoraireTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\MemoireCarteTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\MemoireChiffreTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\MemoireMotsTutoriel.cs" />
+    <Compile Include="ViewModel\Games\Tutoriel\PyramideChiffresTutoriel.cs" />
+    <Compile Include="ViewModel\MenuViewModel.cs" />
+    <Compile Include="ViewModel\ModeEvalViewModel.cs" />
+    <Compile Include="Views\Params\AppdView.xaml.cs">
+      <DependentUpon>AppdView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Params\ChangeLangueView.xaml.cs">
+      <DependentUpon>ChangeLangueView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControl\AfficherScore.xaml.cs">
+      <DependentUpon>AfficherScore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControl\CompteARebours.xaml.cs">
+      <DependentUpon>CompteARebours.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserPage\ChoixStatsView.xaml.cs">
+      <DependentUpon>ChoixStatsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserPage\StatView.xaml.cs">
+      <DependentUpon>StatView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="JeuxDeLogiqueWin10_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\AcceuilView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\DifficulteView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\CalculMentalGameView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\CompteChiffreView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\ComptePersonneView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\DevineOperateurView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\JeuCouleursView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\JeuHoraireView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\MemoireCarteView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\MemoireChiffreView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\MemoireMotsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\MotsMelangeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Games\Game\PyramideChiffreView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Games\Game\TrouveObjetCouleurView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Games\TutorielView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MenuView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Params\AppdView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Params\ChangeLangueView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserControl\AfficherScore.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserControl\CompteARebours.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserPage\ChoixStatsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserPage\StatView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.VCLibs.120, Version=14.0">
+      <Name>Microsoft Visual C++ 2013 Runtime Package for Windows Universal</Name>
+    </SDKReference>
+    <SDKReference Include="SQLite.UWP.2015, Version=3.14.0">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

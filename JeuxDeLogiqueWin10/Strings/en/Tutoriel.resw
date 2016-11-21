@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CalculMental1" xml:space="preserve">
+    <value>The purpose of this little game is to make as soon as possible operations. There are 30 in total.</value>
+  </data>
+  <data name="CalculMental2" xml:space="preserve">
+    <value>Enter the result and confirm by pressing 'Ok' to move to the next.</value>
+  </data>
+  <data name="CalculMental3" xml:space="preserve">
+    <value>If you want to change your result press 'Delete'.</value>
+  </data>
+  <data name="CalculMental4" xml:space="preserve">
+    <value>For the medium and hard levels, the results can be negative (use the '-' button to make the number negative or have become positive).</value>
+  </data>
+  <data name="CompteChiffre1" xml:space="preserve">
+    <value>In this little game some digits will appear in the play area. For each screen, it will respond as quickly to the question.</value>
+  </data>
+  <data name="CompteChiffre2" xml:space="preserve">
+    <value>This may be to count the number of digits according to their values, their colors or movement they make.</value>
+  </data>
+  <data name="CompteChiffre3" xml:space="preserve">
+    <value>Then it will be enough to get the answer with the keyboard and confirm. There are a total of 15 sequences.</value>
+  </data>
+  <data name="ComptePersonne1" xml:space="preserve">
+    <value>In this little game, cats come in and out of a box. This will give the number of cats present in the box at the end of the sequence.</value>
+  </data>
+  <data name="ComptePersonne2" xml:space="preserve">
+    <value>At start of cats can be present before the box is put.</value>
+  </data>
+  <data name="ComptePersonne3" xml:space="preserve">
+    <value>Then cats will come and go from the box.</value>
+  </data>
+  <data name="ComptePersonne4" xml:space="preserve">
+    <value>When the sequence is finished, the "ok" button appears. Enter the number and confirm this cat!</value>
+  </data>
+  <data name="ComptePersonne5" xml:space="preserve">
+    <value>There are a total of 6 sequences.</value>
+  </data>
+  <data name="DevineOp1" xml:space="preserve">
+    <value>In this little game operations will scroll on the screen. It will guess the corresponding operator.</value>
+  </data>
+  <data name="DevineOp2" xml:space="preserve">
+    <value>The result is displayed, but the operator to solve the equation is replaced by '??'.</value>
+  </data>
+  <data name="DevineOp3" xml:space="preserve">
+    <value>Press the button for the sign to replace the '??' so that the operation is correct.</value>
+  </data>
+  <data name="DevineOp4" xml:space="preserve">
+    <value>There are a total of 40 operations.</value>
+  </data>
+  <data name="JeuCouleur1" xml:space="preserve">
+    <value>In this little game, the goal is to indicate as quickly as possible the color in which the word is written.</value>
+  </data>
+  <data name="JeuCouleur2" xml:space="preserve">
+    <value>For example here, the answer is "Yellow". Validate the answer by pressing the color button.</value>
+  </data>
+  <data name="JeuCouleur3" xml:space="preserve">
+    <value>There will be 30 words to complete the mini play.</value>
+  </data>
+  <data name="JeuHoraire1" xml:space="preserve">
+    <value>The purpose of this little game is to calculate as quickly as possible the difference between two clocks.</value>
+  </data>
+  <data name="JeuHoraire2" xml:space="preserve">
+    <value>For this enter the hour and minutes in the white fields to complete the operation.</value>
+  </data>
+  <data name="JeuHoraire3" xml:space="preserve">
+    <value>If there is an error, the answer will be highlighted in red. To switch to another operation, it is necessary to find the right answer.</value>
+  </data>
+  <data name="JeuHoraire4" xml:space="preserve">
+    <value>To enter the answer simply Register the result with the keyboard. The time field will be filled first, then the next minute field.</value>
+  </data>
+  <data name="JeuHoraire5" xml:space="preserve">
+    <value>It is possible to force a field by pressing this one and remplisant with the keyboard.
+</value>
+  </data>
+  <data name="JeuHoraire6" xml:space="preserve">
+    <value>There are a total of 15 computations.</value>
+  </data>
+  <data name="MemoireCarte1" xml:space="preserve">
+    <value>In this game, the letters are hidden behind black boxes. it is to find all the pairs.</value>
+  </data>
+  <data name="MemoireCarte2" xml:space="preserve">
+    <value>First select a box and press it to reveal the letter.</value>
+  </data>
+  <data name="MemoireCarte3" xml:space="preserve">
+    <value>Then choose an another box and press it to display the letter. If two letters are identical, they will remain displayed.</value>
+  </data>
+  <data name="MemoireCarte4" xml:space="preserve">
+    <value>Find all the pairs as quickly as possible to finish the game.</value>
+  </data>
+  <data name="MemoireChiffre1" xml:space="preserve">
+    <value>A series of numbers will appear for a few seconds. then disappear behind dark boxes.</value>
+  </data>
+  <data name="MemoireChiffre2" xml:space="preserve">
+    <value>We must now build on these black boxes in order of the value of each digit.</value>
+  </data>
+  <data name="MemoireChiffre3" xml:space="preserve">
+    <value>Succeeding augment the difficulty of a figure while losing Additional decreases the difficulty.</value>
+  </data>
+  <data name="MemoireChiffre4" xml:space="preserve">
+    <value>There are a total of 8 sequences.</value>
+  </data>
+  <data name="MemoireMot1" xml:space="preserve">
+    <value>In this little game, words will appear in the play area for a few seconds.</value>
+  </data>
+  <data name="MemoireMot2" xml:space="preserve">
+    <value>The goal is to store a maximum of words in the time allotted.</value>
+  </data>
+  <data name="MemoireMot3" xml:space="preserve">
+    <value>After the countdown, you will have a few seconds to regain maxmum words of the list. (To validate, you can press the button 'validate' or else on the 'Enter' key on the keyboard)</value>
+  </data>
+  <data name="MemoireMot4" xml:space="preserve">
+    <value>The more he has found words, the higher the score will be. Accents and special cractères do not matter.</value>
+  </data>
+  <data name="MemoireMot5" xml:space="preserve">
+    <value>After the elapsed time, the missing words are displayed, press the button to end the game.</value>
+  </data>
+  <data name="MotMelange1" xml:space="preserve">
+    <value>For this game, a suite of mixed letters appear on the screen. The goal is to find the word form.</value>
+  </data>
+  <data name="MotMelange2" xml:space="preserve">
+    <value>If you get stuck, help is available, it allows to know the position of a few letters. This help is available three times for a Word. Attention, this aid penalizes the final score.</value>
+  </data>
+  <data name="MotMelange3" xml:space="preserve">
+    <value>If you get really stuck, you can change a password with the button "change".</value>
+  </data>
+  <data name="MotMelange4" xml:space="preserve">
+    <value>When you think you have the password, enter it and press "Ok" if it is correct, the next series of letters appears the field will disappear.</value>
+  </data>
+  <data name="MotMelange5" xml:space="preserve">
+    <value>Total 5 words are finally discovering the part.</value>
+  </data>
+  <data name="SwitchKeyboard" xml:space="preserve">
+    <value>If the screen size is too small to display all the play, press this button to display / hide the keyboard.</value>
+  </data>
+  <data name="Tricalcul1" xml:space="preserve">
+    <value>In this game, the first line of an inverted pyramid figure will appear.</value>
+  </data>
+  <data name="Tricalcul2" xml:space="preserve">
+    <value>To get the result, it will add each number by their neighbors.</value>
+  </data>
+  <data name="Tricalcul3" xml:space="preserve">
+    <value>Example: here we must first add up the numbers in the red rectangle and the two figures in the rectangle to get two separate results.</value>
+  </data>
+  <data name="Tricalcul4" xml:space="preserve">
+    <value>We must now add these two results to obtain the final result.</value>
+  </data>
+  <data name="Tricalcul5" xml:space="preserve">
+    <value>For the hard mode, the principle is the same but with a line of operation and more. it will make the operations to not have more than a single number.</value>
+  </data>
+  <data name="Tricalcul6" xml:space="preserve">
+    <value>There are a total of 10 pyramids to solve.</value>
+  </data>
+  <data name="TrouveObjetCouleur1" xml:space="preserve">
+    <value>The purpose of this little game is to find the good drawing among the buttons at the bottom depending on the two drawings displayed in paying attention to the colors.</value>
+  </data>
+  <data name="TrouveObjetCouleur2" xml:space="preserve">
+    <value>Two cases are possible. For the first, if one of the two forms is the same with the same color, with one of the present forms in the buttons, so it comes from the correct answer.</value>
+  </data>
+  <data name="TrouveObjetCouleur3" xml:space="preserve">
+    <value>Example, here for a blue diamond and a gray triangle. the only this diamond among the buttons is black, but the gray triangle exists. The correct answer is therefore the gray triangle.</value>
+  </data>
+  <data name="TrouveObjetCouleur4" xml:space="preserve">
+    <value>For the second case, if none of the two forms are identical with one of the forms from the buttons (always taking into account the color), press on the piece that has absolutely nothing in common with the two forms (no drawing, no color).</value>
+  </data>
+  <data name="TrouveObjetCouleur5" xml:space="preserve">
+    <value>Example, here, for a grey square and a Green House. None of these drawings are in the buttons. Therefore, choose the button that has no shape (which is therefore not a square or a house) or color (grey or green) of the two objects. It therefore comes to the black diamond.</value>
+  </data>
+  <data name="TrouveObjetCouleur6" xml:space="preserve">
+    <value>There are in total twenty forms to find.</value>
+  </data>
+</root>

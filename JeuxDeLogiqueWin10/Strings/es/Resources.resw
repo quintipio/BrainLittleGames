@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AgeTextBlock.Text" xml:space="preserve">
+    <value>Fecha de nacimiento :</value>
+  </data>
+  <data name="AjouterUtilisateurTextBlock.Text" xml:space="preserve">
+    <value>Agregar un usuario</value>
+  </data>
+  <data name="NomTextBlock.Text" xml:space="preserve">
+    <value>Nombre :</value>
+  </data>
+  <data name="textES" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="textEN" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="textFR" xml:space="preserve">
+    <value>Francés</value>
+  </data>
+  <data name="UtilisateursTextBlock.Text" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="textAnnuler" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="textNon" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="textOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="textOui" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="AppdText.Text" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="BugsText.Text" xml:space="preserve">
+    <value>Bugs, sugerencias</value>
+  </data>
+  <data name="ChangeLangueText.Text" xml:space="preserve">
+    <value>Cambiar el idioma</value>
+  </data>
+  <data name="JeuxPivotHeader.Header" xml:space="preserve">
+    <value>Juegos</value>
+  </data>
+  <data name="MonComptePivotHeader.Header" xml:space="preserve">
+    <value>Mi cuenta</value>
+  </data>
+  <data name="ParametrePivotHeader.Header" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="RateText.Text" xml:space="preserve">
+    <value>Rate the app</value>
+  </data>
+  <data name="DeveloppeurText.Text" xml:space="preserve">
+    <value>Desarrollador :</value>
+  </data>
+  <data name="NouveautesContenu.Text" xml:space="preserve">
+    <value>Versión 2.1:
+-Añadido el juego de palabras mezcladas
+-Cambio en la disponibilidad de juegos en modo demostración
+
+Versión 2.0.1 :
+- Adición de portugués
+
+Versión 2.0 :
+- Optimización de la aplicación
+
+Versión 1.3 :
+-Correcciones gráficos
+-Además del juego 'El objeto bueno en color'
+
+Versión 1.2 :
+- Corregidos errores.
+-Creación de la versión 10 de Windows.
+
+Versión 1.1 :
+-Creación de la aplicación
+-Agregado de 10 pequeño juegos
+-Posibilidad de crear múltiples reproductor
+-Visualización de estadísticas</value>
+  </data>
+  <data name="NouveautesText.Text" xml:space="preserve">
+    <value>Noticias :</value>
+  </data>
+  <data name="VersionText.Text" xml:space="preserve">
+    <value>Versión :</value>
+  </data>
+  <data name="AvertissementSupressionCompte" xml:space="preserve">
+    <value>Nota esta acción es irreversible y borrará todos los datos de esta cuenta. ¿Desea continuar?</value>
+  </data>
+  <data name="RedemarrageRequisText.Text" xml:space="preserve">
+    <value>La modificación completa de este parámetro se tomarán en cuenta después de un reinicio</value>
+  </data>
+  <data name="SupprimeCompteText.Text" xml:space="preserve">
+    <value>Borrar cuenta</value>
+  </data>
+  <data name="SupressionCompteTitre" xml:space="preserve">
+    <value>Eliminar la cuenta</value>
+  </data>
+  <data name="CalculMental" xml:space="preserve">
+    <value>Cálculo mental</value>
+  </data>
+  <data name="Memoire" xml:space="preserve">
+    <value>Ejercicios de memoria</value>
+  </data>
+  <data name="Difficile" xml:space="preserve">
+    <value>Difficile</value>
+  </data>
+  <data name="Facile" xml:space="preserve">
+    <value>Fácil</value>
+  </data>
+  <data name="Moyen" xml:space="preserve">
+    <value>Medio</value>
+  </data>
+  <data name="clearButton.Content" xml:space="preserve">
+    <value>Claro</value>
+  </data>
+  <data name="OkButton.Content" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="StatCateg.Text" xml:space="preserve">
+    <value>Estadísticas por categorías</value>
+  </data>
+  <data name="StatEval.Text" xml:space="preserve">
+    <value>Estadísticas de las evaluaciones</value>
+  </data>
+  <data name="StatExer.Text" xml:space="preserve">
+    <value>Estadísticas por ejercicios</value>
+  </data>
+  <data name="Calcul" xml:space="preserve">
+    <value>Ejercicios de cálculos</value>
+  </data>
+  <data name="Compte" xml:space="preserve">
+    <value>jercicios de conteo</value>
+  </data>
+  <data name="CompteChiffre" xml:space="preserve">
+    <value>Conteo de números</value>
+  </data>
+  <data name="ComptePersonne" xml:space="preserve">
+    <value>Conteo de movimientos</value>
+  </data>
+  <data name="JeuCouleurs" xml:space="preserve">
+    <value>Juego de colores</value>
+  </data>
+  <data name="MemoireChiffre" xml:space="preserve">
+    <value>Memorizar números</value>
+  </data>
+  <data name="MemoireMots" xml:space="preserve">
+    <value>Memorizar las palabras</value>
+  </data>
+  <data name="PyramideChiffre" xml:space="preserve">
+    <value>Pirámide de números</value>
+  </data>
+  <data name="Reflexe" xml:space="preserve">
+    <value>Velocidad</value>
+  </data>
+  <data name="StatsCateg" xml:space="preserve">
+    <value>Estadísticas por categorías</value>
+  </data>
+  <data name="StatsExer" xml:space="preserve">
+    <value>Estadísticas por ejercicios</value>
+  </data>
+  <data name="DifficileText.Text" xml:space="preserve">
+    <value>Difficile</value>
+  </data>
+  <data name="FacileText.Text" xml:space="preserve">
+    <value>Fácil</value>
+  </data>
+  <data name="MoyenText.Text" xml:space="preserve">
+    <value>Medio</value>
+  </data>
+  <data name="DifficulteText.Text" xml:space="preserve">
+    <value>Dificultad</value>
+  </data>
+  <data name="erreur.Text" xml:space="preserve">
+    <value>Errores :</value>
+  </data>
+  <data name="MesResultats.Header" xml:space="preserve">
+    <value>Resultados</value>
+  </data>
+  <data name="MesStatsJeu.Header" xml:space="preserve">
+    <value>Evolución</value>
+  </data>
+  <data name="NouveauRecord.Text" xml:space="preserve">
+    <value>Nuevo registro</value>
+  </data>
+  <data name="RecordGlob.Text" xml:space="preserve">
+    <value>Generales registros</value>
+  </data>
+  <data name="RecordPerso.Text" xml:space="preserve">
+    <value>Expedientes personales</value>
+  </data>
+  <data name="score.Text" xml:space="preserve">
+    <value>Puntuación :</value>
+  </data>
+  <data name="temps.Text" xml:space="preserve">
+    <value>Tiempo :</value>
+  </data>
+  <data name="RetourAcceuil.Content" xml:space="preserve">
+    <value>Volver a Inicio</value>
+  </data>
+  <data name="ValiderButton.Content" xml:space="preserve">
+    <value>Validar</value>
+  </data>
+  <data name="Bleu" xml:space="preserve">
+    <value>Azul</value>
+  </data>
+  <data name="Jaune" xml:space="preserve">
+    <value>Amarillo</value>
+  </data>
+  <data name="Noir" xml:space="preserve">
+    <value>Negro</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>Naranja</value>
+  </data>
+  <data name="Rose" xml:space="preserve">
+    <value>Rosa</value>
+  </data>
+  <data name="Rouge" xml:space="preserve">
+    <value>Rojo</value>
+  </data>
+  <data name="Vert" xml:space="preserve">
+    <value>Verde</value>
+  </data>
+  <data name="Violet" xml:space="preserve">
+    <value>Violeta</value>
+  </data>
+  <data name="JeuHoraire" xml:space="preserve">
+    <value>Calcular horas</value>
+  </data>
+  <data name="FinishButton.Content" xml:space="preserve">
+    <value>Acabado</value>
+  </data>
+  <data name="MemoireCarte" xml:space="preserve">
+    <value>Memorización de letras</value>
+  </data>
+  <data name="DevineOperateur" xml:space="preserve">
+    <value>Encontrar el operador</value>
+  </data>
+  <data name="Demarrer.Text" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="EvaluationPivotHeader.Header" xml:space="preserve">
+    <value>Evaluación</value>
+  </data>
+  <data name="DifficulteEval.Text" xml:space="preserve">
+    <value>En la evaluación, se iniciará tres pequeño juego modo seleccionado al azar. Al final se calculará una nota sobre 20 puntos.</value>
+  </data>
+  <data name="Evaluation" xml:space="preserve">
+    <value>Evaluación</value>
+  </data>
+  <data name="Bougent" xml:space="preserve">
+    <value>se mueven</value>
+  </data>
+  <data name="ChangeTaille" xml:space="preserve">
+    <value>cambian de tamaño</value>
+  </data>
+  <data name="combien" xml:space="preserve">
+    <value>¿Cuántos</value>
+  </data>
+  <data name="de" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="Tournent" xml:space="preserve">
+    <value>gire</value>
+  </data>
+  <data name="AcheterButton.Content" xml:space="preserve">
+    <value>Comprar la versión completa</value>
+  </data>
+  <data name="ExerciceAleatoire.Content" xml:space="preserve">
+    <value>Un ejercicio aleatorio</value>
+  </data>
+  <data name="ChangeUtilisateurText.Text" xml:space="preserve">
+    <value>Cambiar de usuario</value>
+  </data>
+  <data name="StatButton.Content" xml:space="preserve">
+    <value>Ver la curva de evolución</value>
+  </data>
+  <data name="QuitterText.Text" xml:space="preserve">
+    <value>Salida</value>
+  </data>
+  <data name="CopyrightText.Text" xml:space="preserve">
+    <value>Referencias :</value>
+  </data>
+  <data name="CopyrightTextBlock.Text" xml:space="preserve">
+    <value>Tablas con WinRtXAMLToolkit</value>
+  </data>
+  <data name="StatsGen" xml:space="preserve">
+    <value>Estadísticas Generales</value>
+  </data>
+  <data name="StatGen.Text" xml:space="preserve">
+    <value>Estadísticas Generales</value>
+  </data>
+  <data name="JeuObjetCouleur" xml:space="preserve">
+    <value>El objeto bueno en el color</value>
+  </data>
+  <data name="textPT" xml:space="preserve">
+    <value>Portugués</value>
+  </data>
+  <data name="MotsMelange" xml:space="preserve">
+    <value>Encuentra la palabra</value>
+  </data>
+  <data name="changeButton.Content" xml:space="preserve">
+    <value>Cambio</value>
+  </data>
+  <data name="Reflexion" xml:space="preserve">
+    <value>Reflexión</value>
+  </data>
+</root>

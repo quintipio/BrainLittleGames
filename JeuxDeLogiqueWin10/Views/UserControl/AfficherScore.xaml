@@ -1,0 +1,45 @@
+﻿<UserControl
+    x:Class="JeuxDeLogiqueWin10.Views.UserControl.AfficherScore"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer >
+        <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+            <StackPanel Grid.Column="0" Grid.Row="0">
+            <TextBlock x:Name="NewRecordText" Visibility="Collapsed" x:Uid="NouveauRecord" Foreground="Red" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock TextWrapping="Wrap" x:Uid="RecordPerso" Margin="0,10,0,0" Foreground="#FF494949" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RecordPerso1" Text="{Binding ScorePersoA}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,7,0,0" FontSize="14" Foreground="Black"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RecordPerso2" Text="{Binding ScorePersoB}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" Margin="0,8,0,0" FontSize="14"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RecordPerso3" Text="{Binding ScorePersoC}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Foreground="Black" Margin="0,8,0,0"/>
+            <TextBlock TextWrapping="Wrap" x:Uid="RecordGlob" Margin="0,10,0,0" Foreground="#FF494949" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RecordGlob1" Text="{Binding ScoreGlobalA}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,7,0,0" FontSize="14" Foreground="Black"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RecordGlob2" Text="{Binding ScoreGlobalB}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" Margin="0,8,0,0" FontSize="14"/>
+            <TextBlock TextWrapping="Wrap" x:Name="RecordGlob3" Text="{Binding ScoreGlobalC}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Foreground="Black" Margin="0,8,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <TextBlock TextWrapping="Wrap" x:Uid="score" Foreground="#FF494949" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,15,0,0" FontSize="18"/>
+            <TextBlock TextWrapping="Wrap" x:Name="ScoreTextBlock" Text="{Binding Score}" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center" Margin="0,10,0,0" FontSize="14"/>
+            <TextBlock TextWrapping="Wrap" x:Uid="temps" Foreground="#FF494949" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,15,0,0" FontSize="18"/>
+            <TextBlock TextWrapping="Wrap" x:Name="TempsTextBlock" Text="{Binding Temps}" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center" Margin="0,10,0,0" FontSize="14"/>
+            <TextBlock TextWrapping="Wrap" x:Uid="erreur" Foreground="#FF494949" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,15,0,0" FontSize="18"/>
+            <TextBlock TextWrapping="Wrap" x:Name="ErreurTextBlock" Text="{Binding Erreur}" HorizontalAlignment="Center" Foreground="Black" VerticalAlignment="Center" Margin="0,10,0,0" FontSize="14"/>
+        </StackPanel>
+        <Button Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" x:Name="EndButton" x:Uid="RetourAcceuil" BorderBrush="Black" Foreground="Black" Grid.ColumnSpan="2" Click="EndButton_Click" VerticalAlignment="Top" FontFamily="Global User Interface" Margin="0,60,0,0"/>
+        <Button Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" x:Name="StatButton" x:Uid="StatButton" BorderBrush="Black" Foreground="Black" Grid.ColumnSpan="2" Click="StatButton_OnClickButton_Click" VerticalAlignment="Top" Margin="0"/>
+
+    </Grid>
+
+    </ScrollViewer>
+</UserControl>
