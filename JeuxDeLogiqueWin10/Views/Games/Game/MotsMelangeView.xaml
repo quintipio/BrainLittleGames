@@ -52,7 +52,16 @@
                 <Button x:Name="ChangeMotButton" Grid.Column="2" x:Uid="changeButton" Content="Changer" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Click="Change_Click"/>
             </Grid>
 
-            <TextBox x:Name="MotEntreeTextBox"  Grid.Row="2" Text="{x:Bind ViewModel.MotEntree,Mode=TwoWay}" KeyUp="TextBox_KeyUp"/>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <AppBarButton Grid.Column="0" Icon="Keyboard" IsCompact="True" Width="50" Click="AfficherClavier_Click"/>
+                <TextBox x:Name="MotEntreeTextBox"  Grid.Column="1" Text="{x:Bind ViewModel.MotEntree,Mode=TwoWay}" KeyUp="TextBox_KeyUp"/>
+
+            </Grid>
+
             <Grid Grid.Row="3" x:Name="GridButton">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -61,6 +70,6 @@
                 <Button x:Name="ValidMotButton" Grid.Column="0" x:Uid="OkButton" Content="OK" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Margin="0" Click="Valid_Click"/>
                 <Button x:Name="AnnuleMotButton" Grid.Column="1" x:Uid="clearButton" Content="Effacer" BorderBrush="{x:Null}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF3C3B3B" BorderThickness="0" Click="Efface_Click"/>
             </Grid>
-           </Grid>
+        </Grid>
     </Grid>
 </Page>

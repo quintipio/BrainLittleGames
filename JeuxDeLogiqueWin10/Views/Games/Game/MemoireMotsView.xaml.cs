@@ -94,6 +94,7 @@ namespace JeuxDeLogiqueWin10.Views.Games.Game
             ValidButton.Visibility = Visibility.Visible;
             MotTextBox.Visibility = Visibility.Visible;
             EraseMots();
+            MotTextBox.Focus(FocusState.Keyboard);
         }
 
         //fin du compte à rebours pour la partie du temps d'écriture de smots du joueur
@@ -124,6 +125,7 @@ namespace JeuxDeLogiqueWin10.Views.Games.Game
                 AjouterMot(MotTextBox.Text,false);
             }
             MotTextBox.Text = "";
+            MotTextBox.Focus(FocusState.Keyboard);
         }
 
         /// <summary>

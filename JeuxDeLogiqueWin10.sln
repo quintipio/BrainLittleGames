@@ -40,7 +40,7 @@ Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 2
 		SccEnterpriseProvider = 
-		SccTeamFoundationServer = 
+		SccTeamFoundationServer =
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = JeuxDeLogiqueWin10\\JeuxDeLogiqueWin10.csproj
 		SccProjectName1 = JeuxDeLogiqueWin10

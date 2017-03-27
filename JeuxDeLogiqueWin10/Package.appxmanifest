@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="" Publisher="" Version="2017.10.0.0" />
+  <mp:PhoneIdentity PhoneProductId="" PhonePublisherId="" />
   <Properties>
     <DisplayName>Brain Little Games</DisplayName>
+    <PublisherDisplayName></PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -11,7 +14,7 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" EntryPoint="JeuxDeLogiqueWin10.App">
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="JeuxDeLogiqueWin10.App">
       <uap:VisualElements DisplayName="Brain Little Games" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Jeux de logique, de calculs et de mémoire" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\Square71x71Logo.png" ShortName="Brain Little Games" Square310x310Logo="Assets\Square310x310Logo.png">
           <uap:ShowNameOnTiles>

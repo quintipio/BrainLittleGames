@@ -13,17 +13,17 @@ namespace JeuxDeLogiqueWin10.Context
         /// <summary>
         /// adresse de support
         /// </summary>
-        public const string Support = "mail@mail.fr";
+        public const string Support = "";
 
         /// <summary>
         /// version de l'application
         /// </summary>
-        public const string Version = "2.1.0";
+        public const string Version = "2.1.1";
 
         /// <summary>
         /// nom du développeur
         /// </summary>
-        public const string Developpeur = "Nom Dev";
+        public const string Developpeur = "";
 
         /// <summary>
         /// Nom du fichier de la base de donnée
@@ -33,11 +33,11 @@ namespace JeuxDeLogiqueWin10.Context
         /// <summary>
         /// Nom d'utilisateur à taper pour débloquer le mode développeur
         /// </summary>
-        public const string CheatFullModeName = "Mot_de_passe_secret";
+        public const string CheatFullModeName = "";
 
         /// <summary>
         /// Date de naissance à saisir pour débloquer le mode développeur
         /// </summary>
-        public static readonly DateTime CheatFullModeDateNaissance = new DateTime(1980, 01, 01);
+        public static readonly DateTime CheatFullModeDateNaissance = new DateTime(1900, 01, 01);
     }
 }

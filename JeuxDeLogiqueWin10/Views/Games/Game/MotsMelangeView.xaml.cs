@@ -88,11 +88,13 @@ namespace JeuxDeLogiqueWin10.Views.Games.Game
             ViewModel.StartGame();
             await ViewModel.ChargeListeMots();
             ViewModel.GenereMot();
+            FocusOnText();
         }
 
         private void Efface_Click(object sender, RoutedEventArgs e)
         {
             ViewModel.MotEntree = "";
+            FocusOnText();
         }
 
         private async void Valid_Click(object sender, RoutedEventArgs e)
@@ -139,6 +141,7 @@ namespace JeuxDeLogiqueWin10.Views.Games.Game
                 else
                 {
                     ViewModel.GenereMot();
+                    FocusOnText();
                 }
             }
             else
@@ -150,11 +153,13 @@ namespace JeuxDeLogiqueWin10.Views.Games.Game
         private void Help_Click(object sender, RoutedEventArgs e)
         {
             ViewModel.GetHelp();
+            FocusOnText();
         }
 
         private void Change_Click(object sender, RoutedEventArgs e)
         {
             ViewModel.GenereMot();
+            FocusOnText();
         }
 
         private async void TextBox_KeyUp(object sender, KeyRoutedEventArgs e)
@@ -163,6 +168,19 @@ namespace JeuxDeLogiqueWin10.Views.Games.Game
             {
                 ViewModel.MotEntree = MotEntreeTextBox.Text;
                 await ControleMot();
+            }
+        }
+
+        private void AfficherClavier_Click(object sender, RoutedEventArgs e)
+        {
+            FocusOnText();
+        }
+
+        private void FocusOnText()
+        {
+            if ( MotEntreeTextBox.FocusState != FocusState.Keyboard)
+            {
+                MotEntreeTextBox.Focus(FocusState.Keyboard);
             }
         }
     }
